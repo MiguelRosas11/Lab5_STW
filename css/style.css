@@ -1,0 +1,176 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial, sans-serif;
+}
+
+body{
+height:100vh;
+background:#f5f7fb;
+overflow:hidden;
+color:#1f2937;
+}
+
+.layout{
+display:grid;
+grid-template-columns:300px 1fr;
+height:100vh;
+gap:20px;
+padding:20px;
+align-items:stretch;
+}
+
+/* PANEL CREAR POST */
+
+.create-panel{
+background:white;
+padding:24px;
+border-radius:24px;
+display:flex;
+flex-direction:column;
+gap:12px;
+box-shadow:0 8px 24px rgba(0,0,0,0.06);
+}
+
+.create-panel h2{
+font-size:26px;
+margin-bottom:4px;
+}
+
+.create-panel p{
+color:#6b7280;
+margin-bottom:8px;
+}
+
+.create-panel input,
+.create-panel textarea{
+padding:12px 14px;
+border:none;
+outline:none;
+border-radius:16px;
+background:#f3f6fb;
+font-size:14px;
+color:#111827;
+}
+
+.create-panel textarea{
+height:200px;
+resize:none;
+}
+
+/* BOTONES */
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+border-radius:16px;
+padding:12px 16px;
+font-size:14px;
+font-weight:600;
+cursor:pointer;
+transition:background 0.2s ease, transform 0.15s ease;
+}
+
+button:hover{
+background:#1d4ed8;
+transform:translateY(-1px);
+}
+
+button:active{
+transform:translateY(0);
+}
+
+#createFeedback{
+min-height:20px;
+font-size:14px;
+color:#374151;
+margin-top:4px;
+}
+
+/* PANEL POSTS */
+
+.posts-panel{
+background:white;
+border-radius:24px;
+display:flex;
+flex-direction:column;
+padding:24px;
+box-shadow:0 8px 24px rgba(0,0,0,0.06);
+
+width:75%;
+margin:0 auto;
+max-width:1100px;
+}
+
+/* SEARCH BAR */
+
+.search-bar{
+display:grid;
+grid-template-columns:200px 1fr 110px 140px;
+gap:10px;
+margin-bottom:18px;
+}
+
+.search-bar input,
+.search-bar select{
+padding:12px 14px;
+border:none;
+outline:none;
+border-radius:16px;
+background:#f3f6fb;
+font-size:14px;
+color:#111827;
+}
+
+/* CONTENEDOR DE POSTS */
+
+.posts-wrapper{
+flex:1;
+border:none;
+border-radius:24px;
+background:#f8fafc;
+padding:16px;
+overflow:hidden;
+}
+
+/* LISTA DE POSTS */
+
+.posts-container{
+height:100%;
+overflow-y:auto;
+display:flex;
+flex-direction:column;
+gap:14px;
+padding-right:6px;
+}
+
+/* CARD DE POST */
+
+.post-card{
+background:white;
+padding:16px 18px;
+border-radius:20px;
+box-shadow:0 4px 14px rgba(0,0,0,0.05);
+}
+
+.post-author{
+font-weight:700;
+margin-bottom:8px;
+font-size:15px;
+color:#111827;
+}
+
+/* MENSAJE DE ESTADO */
+
+.ui-state{
+display:flex;
+align-items:center;
+justify-content:center;
+height:100%;
+color:#6b7280;
+font-size:14px;
+text-align:center;
+padding:20px;
+}
